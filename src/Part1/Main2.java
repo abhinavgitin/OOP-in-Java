@@ -10,7 +10,7 @@ public class Main2 {
             main2.nextPrint();
     }
     void nextPrint(){
-        System.out.println(anotherName);
+        System.out.println(this.anotherName);
     }
     }
 class Person {
@@ -21,7 +21,7 @@ class Person {
         this.name = "Aakanksha";
     }
     void printingANameOfAnObject() {
-        System.out.println(anotherName);
+        System.out.println(this.anotherName);
         System.out.println("The name is " + name); // will the global variable be printed?????????
         System.out.println(" the name is "+ anotherName); // why is that the same name is being printed even of i have the different variables??????
         System.out.println("The name is " + this.name);

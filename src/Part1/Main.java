@@ -32,7 +32,7 @@ public class Main {
         //        data2.location = "Arunachal";
         //        data2.age = 19;
         System.out.println(data2.name+" age is "+data2.age);
-        // like wise i have another real world object with the same properties of the Student but different values;
+        // like wise i have another real world object with the same properties of the class Student but different values;
         data2.thisIsAPrintStatement();
         // my opject . property i want to access
 
@@ -44,11 +44,12 @@ public class Main {
         //4--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
         Student firstObject = new Student("Abhinav Puri", 19,"Rhenock, Sikkim", 100000 );
         System.out.println(" the data of the first object having the universal properties are "+firstObject.name+" age is "+firstObject.age+" location is "+ firstObject.location+" and salary is "+firstObject.salary+"\n");
-        //like wise i can make another object secondObject with the same properties of the student class assigning it with its data in the parameter "template made"
+        // doesn't matter when or where you call this the data of the firstObject passed will be printed when called as we have done just above in the sout
+        //like wise I can make another object secondObject with the same properties of the student class assigning it with its data in the parameter "template made"
         Student secondObject = new Student("Aakanksha Puri", 17,"Arunachal", 200000 );
         System.out.println(" the data of the second object having the universal properties are "+secondObject.name+" age is "+secondObject.age+" location is "+ secondObject.location+" and salary is "+secondObject.salary+"\n");
         secondObject.thisIsAPrintStatement(); // here the data of the object goes
-        // ...... and likewise as many as you want to
+        // ...... and likewise as many as you want to and for large inputs we do use external files and the use of loops to read data and use it there itself
         //5--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
         //here i need to copy the data of the data3 to the data4 also combine it with data1 using name2 location2 the age2 and salary2 (task)
@@ -102,9 +103,12 @@ class Student{
         this.age = 19;
         this.salary = 50000f;
         this("Rohit", 344, "oklohoma", 6474);
+        // this shows how we call one constructor ( i.e the one wich  is having 4 parameters i call that here) from another constructor ( i.e this one Student() )
     }
     Student( Student standsFirst ){ // so we need the data of an other student (data2) to put it in the data 3
       //⬆️ matlab Is student jiska ek parameter hai usska name property me data2 ka name property ka data dal do
+        // yaha pe we need the property data of an other student data2 so uss student ka property ka data ko access karneke liye we do the same thing
+        // the name of the object . name of the class property -> so yaha pe object ka nam hai standsFirst therefore its like data stored in object standsFirst.name property
         // read it again
         this.name = standsFirst.name;
         this.location = standsFirst.location;
