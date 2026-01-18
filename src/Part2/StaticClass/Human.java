@@ -17,7 +17,7 @@ public class Human {
         Human.population++;
     }
     public Human() {
-
+        Human.population++;
     }
     static Human object = new Human();
     String nonStatic1() {
