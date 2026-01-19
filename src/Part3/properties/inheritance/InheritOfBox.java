@@ -15,8 +15,9 @@ public class InheritOfBox extends Box {
         // its like replacing the "PARENT CLASS PROPERTIES INITIALIZATION" for example:
         /*we wanted that we could use the length the width and the height but that properties were in the parent class so
         * instead of doing like
-        * this.length = length
+        * box class ka .length = length
         * this.width = width
         * this.height = height here we simply did this part of the initialization by using the super and then what we wanted to use and initialize*/
+        // also the format for the ( here , here and , here ) should be the way it is there in the object constructor made
     }
 }
