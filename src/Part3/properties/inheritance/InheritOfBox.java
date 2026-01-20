@@ -8,7 +8,7 @@ public class InheritOfBox extends Box {
         // now here we can easily access the properties of the Box
         this.length = 222d;
     }
-    InheritOfBox(double height, double length, double width, double weight){
+    InheritOfBox(double length, double width, double height, double weight){
         this.weight = weight;
         super( length, width, height ); // this like is basically replacing the one constructor elements having the length the width and the height
         //  it's the parent class constructor and the super is used to initialize the parent class constructor
@@ -19,5 +19,14 @@ public class InheritOfBox extends Box {
         * this.width = width
         * this.height = height here we simply did this part of the initialization by using the super and then what we wanted to use and initialize*/
         // also the format for the ( here , here and , here ) should be the way it is there in the object constructor made
+
+        // we can also access the super class members like this
+        System.out.println("Use of super to access the super class members "+super.height);
+        // so to access anything from the super class we do the super . variable name not this . variable name
+    }
+    // we make a another normal constructor taking another object into it
+    InheritOfBox(InheritOfBox object){
+        super(object);
+        this.weight = object.weight;
     }
 }

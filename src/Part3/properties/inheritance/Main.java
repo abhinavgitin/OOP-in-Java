@@ -42,5 +42,14 @@ public class Main {
         // InheritOfBox object6 = new Box(45 ,2,4); // remove the comment and see;
         // but in case of the child class it was accessible cause the child class extends the super class so it had them!
         // so we cannot have a child reference variable to a parent object
+
+        InheritOfBox object6 = new InheritOfBox(object4);
+        System.out.println(
+                "Length from another object: "+object6.length+"\n"+
+                        "width from another object: "+object6.width+"\n"+
+                        "height from another object: "+object6.height+"\n"+
+                        "weight from another object: "+object6.width+"\n"
+        );
+
     }
 }
