@@ -15,23 +15,25 @@ public class Main {
         Box object3 = new Box(44d,44d,44d);
         System.out.println(object3.length+" "+object3.width+" "+object3.height);
 
-        InheritOfBox object4 = new InheritOfBox(12,56,89,56);
+        InheritOfBox object4 = new InheritOfBox(12,56,89,99);
         System.out.println(
                 "Length from the inherited class is : "+object4.length+"\n"+
                         "width from the inherited class is : "+object4.width+"\n"+
                         "height from the inherited class is : "+object4.height+"\n"+
-                        "weight form the inherited class is : "+object4.width+"\n"
+                        "weight form the inherited class is : "+object4.weight+"\n"
         );
         // an important concept of referencing the parent and the child classes
         Box object5 = new InheritOfBox(12 ,78, 45,100);
         // here I am trying to reference a parent super class ( Box ) to a child ( InheritOfBox )
-        // so it means that I will easily be accessible to the members or properties having in the super class as well as the child class cause
-        // the InheritOfBox is having all the data ( I think it is like this )
+        // so it means that I will easily be accessible to the members or properties having in the super class ONLY cause
+        // Object (InheritOfBox) decides what exists
+        //Reference (Box) decides what you can access very STRICTTTTTT!!! read it again
         System.out.println(
                 "Length : "+object5.length+"\n"+
                         "width : "+object5.width+"\n"+
-                        "height : "+object5.height+"\n"+
-                        "weight : "+object5.width+"\n"
+                        "height : "+object5.height+"\n"
+                        //"weight : "+object5.weight+"\n" // same here the box doesn't know what is the member weight cause it's a member of the child class and is declared there
+                // but, we can access the members of the Box cause the InheritOfBox extends Box therefore the members of the box is accessable in the child class and not in the super class
         );
         // also when the child class( InheritOfBox object4 ) is referencing to itself ( new InheritOfBox(12,56,89,56); ) the members to itself and the super class is accessible
         // InheritOfBox object4 = new InheritOfBox(12,56,89,56);
@@ -44,11 +46,13 @@ public class Main {
         // so we cannot have a child reference variable to a parent object
 
         InheritOfBox object6 = new InheritOfBox(object4);
+        /*object6 is NOT inheriting object4
+        object6 is COPYING DATA from object4*/
         System.out.println(
                 "Length from another object: "+object6.length+"\n"+
                         "width from another object: "+object6.width+"\n"+
                         "height from another object: "+object6.height+"\n"+
-                        "weight from another object: "+object6.width+"\n"
+                        "weight from another object: "+object6.weight+"\n"
         );
 
     }

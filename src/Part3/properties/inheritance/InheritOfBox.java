@@ -6,7 +6,8 @@ public class InheritOfBox extends Box {
     InheritOfBox(){
         this.weight = 10d;
         // now here we can easily access the properties of the Box
-        this.length = 222d;
+        super.length = 222d;
+        this.width = 666d;
     }
     InheritOfBox(double length, double width, double height, double weight){
         this.weight = weight;
@@ -24,7 +25,7 @@ public class InheritOfBox extends Box {
         System.out.println("Use of super to access the super class members "+super.height);
         // so to access anything from the super class we do the super . variable name not this . variable name
     }
-    // we make a another normal constructor taking another object into it
+    // we make a normal constructor taking another object into it
     InheritOfBox(InheritOfBox object){
         super(object);
         this.weight = object.weight;
