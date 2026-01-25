@@ -1,4 +1,4 @@
-package Part3.properties.inheritance;
+package Part3.properties.singleinheritance;
 
 public class Main {
     static void main() {

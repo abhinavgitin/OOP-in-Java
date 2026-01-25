@@ -1,4 +1,4 @@
-package Part3.properties.inheritance;
+package Part3.properties.singleinheritance;
 
 public class InheritOfBox extends Box {
     // extends to use the properties of the parent class
