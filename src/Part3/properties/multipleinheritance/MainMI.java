@@ -90,5 +90,15 @@ public class MainMI {
                         "Maruti type is : "+object8.type+"\n"+
                         "Maruti car seats is : "+object8.seats
         );
+        System.out.println();
+        // I make an object, and then I do the referencing of the super class and then the objcet of the child class here
+        Part3.properties.multipleinheritance.BoxWeight object9 = new BoxWeight();
+        // so here still the method is like just the overridden, but it is not cause the overridden depends upon the objcet and not the static
+        // so the one in to the Box method gets called
+        Part3.properties.multipleinheritance.Box.thisIsAPrintStatement();
+//        BoxWeight obj = new BoxWeight(); // i commented this line cause the method is static and is not dependent on any object so we can access this directly via the class name itself
+        BoxWeight.thisIsAPrintStatement(); // when the method in the child class is commented then the child class will search the same method into the
+        // super class and thus the one in the super class gets executed and if not commented then the child class method gets executed
+        // there is a simple formula to GET THIS -> Overriding depends on objects and static doesn't depend on object so we cannot override static stuff
     }
 }

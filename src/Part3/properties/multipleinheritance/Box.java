@@ -17,5 +17,8 @@ public class Box {
         this.boxWidth = width;
         this.boxHeight = height;
     }
+    static void thisIsAPrintStatement(){
+        System.out.println("I am in a Box class ");
+    }
 
 }

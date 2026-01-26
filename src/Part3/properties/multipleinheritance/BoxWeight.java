@@ -17,4 +17,7 @@ public class BoxWeight extends Box {
         super(wLength,wWidth,wHeight);
         this.boxWeight = wWeight;
     }
+//    static void thisIsAPrintStatement(){
+//        System.out.println("I am in a BoxWeight class ");
+//    }
 }
