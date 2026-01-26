@@ -1,9 +1,9 @@
 package Part3.properties.singleinheritance;
 
 public class Box {
-    double length;
-    double width;
-    double height;
+    public double length;
+    public double width;
+    public double height;
 
     Box() {
         super(); //  also shows that the main class the super class is also being referenced to a super class which is an object class ctrl + click
@@ -13,7 +13,7 @@ public class Box {
         this.height = -1d;
         this.width = -1d;
     }
-    Box ( double l, double w, double h){
+    public Box ( double l, double w, double h){ // because i want to access this one from the MainMI class
         this.length = l;
         this.width = w;
         this.height = h;

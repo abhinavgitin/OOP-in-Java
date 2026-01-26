@@ -2,14 +2,14 @@ package Part3.properties.singleinheritance;
 
 public class InheritOfBox extends Box {
     // extends to use the properties of the parent class
-    double weight;
+    public double weight;
     InheritOfBox(){
         this.weight = 10d;
         // now here we can easily access the properties of the Box
         super.length = 222d;
         this.width = 666d;
     }
-    InheritOfBox(double length, double width, double height, double weight){
+    public InheritOfBox(double length, double width, double height, double weight){
         this.weight = weight;
         super( length, width, height ); // this like is basically replacing the one constructor elements having the length the width and the height
         //  it's the parent class constructor and the super is used to initialize the parent class constructor
@@ -26,7 +26,7 @@ public class InheritOfBox extends Box {
         // so to access anything from the super class we do the super . variable name not this . variable name
     }
     // we make a normal constructor taking another object into it
-    InheritOfBox(InheritOfBox object){
+    public InheritOfBox(InheritOfBox object){
         super(object);
         this.weight = object.weight;
     }
