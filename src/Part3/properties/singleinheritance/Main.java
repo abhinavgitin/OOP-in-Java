@@ -54,6 +54,6 @@ public class Main {
                         "height from another object: "+object6.height+"\n"+
                         "weight from another object: "+object6.weight+"\n"
         );
-
+        System.out.println(object6 instanceof Box); // cause the InheritOfBox extends Box and is s subclass of the super class Box
     }
 }
