@@ -1,4 +1,4 @@
-package Part5;
+package Part5.abstraction;
 
 public abstract class Parent {
     // This is about the abstract classes and what is the meaning of the abstract classes?
@@ -13,10 +13,23 @@ public abstract class Parent {
     abstract void carrier();
     abstract void friendsCarrier();
     // when any class is inheriting an abstract class then teh class should also be stated as abstract class
-
+    int checkTheFirstCall = 0;
     int age;
     public Parent( int ageDate ) {
         this.age = ageDate;
+    }
+    // we can create static methods into the abstract class itself and that is allowed into java
+    static void itsAHello() {
+        System.out.println("Hello from Abhinav");
+    }
+
+    // and same goes for the normal methods non-static ones
+    void normal( boolean callFromChildObject) {
+        System.out.println("A normal method from the abstract class");
+        if (callFromChildObject){
+            System.out.println("It was called from the referencing object child class" + checkTheFirstCall); // cause the object of the abstract classes cannot be made
+            checkTheFirstCall++;
+        }
     }
 
     static void main() {

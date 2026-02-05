@@ -1,4 +1,4 @@
-package Part5;
+package Part5.abstraction;
 
 public class Daughter extends Parent {
     int age;
