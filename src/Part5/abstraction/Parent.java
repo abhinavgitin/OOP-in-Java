@@ -36,3 +36,26 @@ public abstract class Parent {
 //        Parent obj = new Parent(88); cannot cause we cannot make the object of the abstract classes
     }
 }
+/* Some thinsg to remember :
+* 🔥 Why Do We Need Abstract Classes?
+
+They are used when:
+
+✅ You want common structure
+✅ You want shared code
+✅ But some behavior must be decided by child
+🏗 Real Use Case Thinking
+
+If you build:
+
+Payment system
+Game engine
+Machine simulation
+Shape system
+
+You want:
+A general parent
+Enforced rules
+Controlled design
+Very IMPORTANT! ALL IN ONE
+ABSTRACT CLASSES HELP YOU FORCE THE SUBCLASSES TO FOLLOW CERTAIN RULES AND IMPLEMENT THINGS TO THE CHILD CLASSES AS PER THE RULES, BLUEPRINTS, TEMPLATES MADE!!!*/
