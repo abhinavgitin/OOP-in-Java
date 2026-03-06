@@ -18,9 +18,9 @@ public class MainAb {
         // hence it is stated that the object class or the child class overridden methods are called even tough the referencing class is the super class of its own
         // STATED that the object of the abstract classes cannot be made
         // You can’t create an object of an abstract class because objects represent reality, and abstract classes represent ideas and the templates or blueprints for the child classes
-        System.out.println(object1.age);
-        // when I do objcet1.sAge it will throw an error cause this is a simple referencing object error not the overridden one so the parent doesn't know what is there into the child class so we cannot print the value of the sAge
-        System.out.println(object3.sAge);
+        System.out.println(object1.age); // the referencing class is the parent class so we can only access the age the data which is there
+        //System.out.println(object1.sAge); this cannot be done cause the constructor is not overridden and not the overridden one so the parent doesn't know what is there into the child class so we cannot print the value of the sAge
+        System.out.println(object3.sAge); // same here the referencing class is the son class and of the same class object therefore we have the data inside the child class only
 
         // static method is there into the abstract class and can be called easily here
         Parent.itsAHello();
