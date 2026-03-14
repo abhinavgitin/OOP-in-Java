@@ -1,0 +1,4 @@
+1. here the nice car is having the properties of what i car should have and thus what we do is that first we initilize or make the template
+of what all a car should have
+2. in the second step we inherit them and then modify the same as per the car we need
+3. and in the third step we call that upon the car that we want to create!
