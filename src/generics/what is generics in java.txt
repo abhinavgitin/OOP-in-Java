@@ -1,0 +1,12 @@
+For the better use of the primitive data types and the objects we need data structures to perform some such operations that can handel the real life useages
+therefore we have data types like ArrayList HashMap and HashSet Trees etc.
+we use this versions of data structures with the type of speration or class we want
+for example if I want to deal with integer I will use the Integer objcet class for such
+if I want for string I will use String, and it works same with the objects
+what we encountered is that we are USING THE SAME DATA STRUCTURE but with diffrent types!
+Now This TYPES is known as generics in java we tell the data structure that we want the type of the data structure to be integer string or an object
+this is what generics is based upon, there is already a template made the "DATA STRUCTURE" what we only need to do is that we need to provide
+the TYPE OF STRUCTURE WE WANT! weather it be an integer or a string!
+
+so providing the type to the template is in the most simple way called generics, like how versatile is your structure ( the template )
+They store objects! which make them versatile.
