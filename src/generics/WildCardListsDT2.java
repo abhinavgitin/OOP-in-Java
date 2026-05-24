@@ -45,7 +45,9 @@ public class WildCardListsDT2<T extends Number> {
     }
 
     public T remove() {
-        return (T) data[--size];
+        T removed = (T)data[--size];
+        data[size] = null;
+        return removed;
     }
 
     public T get(int index) {
