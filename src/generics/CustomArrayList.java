@@ -72,7 +72,7 @@ public class CustomArrayList {
     }
 
     public boolean isEmpty() {
-        return size == 0;
+        return size == 0; // return <> respond ( haha )
     }
     public void clear() {
         for ( int i = 0 ; i < size ; i++ ) {

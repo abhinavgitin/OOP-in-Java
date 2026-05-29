@@ -25,7 +25,7 @@ public class PolyPrint {
         // also then when the toString method is called then we in return get the  name of the class concatenating the Hexcode.
         // IMPORTANT -> so on that basis we are the child class right cause we extend the super class Object
         // now it is important to understand that
-        // when an overridden method in the child class is the Object into the referencing super class then the method of the object class the child class gets executed
+        // when an overridden method in the child class is the Object into the referencing super class then the method of the object class in the child class gets executed
         // just like we did into the answer statement of the Shapes class where The Circle was extending the Shapes class
         // now read above
 

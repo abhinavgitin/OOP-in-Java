@@ -14,7 +14,18 @@ public class CustomGenericsArrayList<T> { // the T here is the type we want for 
 
     @Override
     public String toString() {
-        return "CustomArrayList{" + "size=" + size + ", data=" + Arrays.toString(data) + '}';
+        // return "CustomArrayList{" + "size=" + size + ", data=" + Arrays.toString(data) + '}';
+        // we can do the above but the above prints the entire array data so we do
+        StringBuilder str = new StringBuilder();
+        str.append("[ ");
+        for ( int i = 0 ; i < size ; i++ ) {
+            str.append(data[i]);
+            if ( i < size - 1 ) {
+                str.append(", ");
+            }
+        }
+        str.append(" ]");
+        return str.toString();
     }
 
     static void main() {
@@ -23,6 +34,14 @@ public class CustomGenericsArrayList<T> { // the T here is the type we want for 
         System.out.println(list);
         CustomGenericsArrayList<String> list2 = new CustomGenericsArrayList<>();
         list2.add("This is a string");
+        System.out.println(list2);
+        list2.add("Abhinav");
+        list2.add("Puri");
+        System.out.println(list2.size);
+        System.out.println(list2.isEmpty());
+        System.out.println(list2.get(2));
+        System.out.println(list2.isFull());
+        System.out.println(list2.remove()); // doesn't take any parameters;
         System.out.println(list2);
     }
 
@@ -37,7 +56,18 @@ public class CustomGenericsArrayList<T> { // the T here is the type we want for 
 
     // last element is now removed when the remove is called;
     public T remove() {
-        return (T)data[--size]; // here the type of the data is already object, and we just need to pass the data type of the T type
+        T removed = (T)data[--size]; // here the type of the data is already object, and we just need to pass the data type of the T type
+        data[size] = null;
+        /*
+         * Since the object reference still remains inside the array slot,
+         * we clear that slot by assigning null to it.
+         *
+         * Otherwise, just doing data[--size] decreases the logical size
+         * but the object reference still exists in memory.
+         *
+         * This unnecessary remaining reference is called an obsolete reference.
+         */
+        return removed;
         // so we just type cast the object to The type we desire!
     }
 

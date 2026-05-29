@@ -58,4 +58,7 @@ A general parent
 Enforced rules
 Controlled design
 Very IMPORTANT! ALL IN ONE
-ABSTRACT CLASSES HELP YOU FORCE THE SUBCLASSES TO FOLLOW CERTAIN RULES AND IMPLEMENT THINGS TO THE CHILD CLASSES AS PER THE RULES, BLUEPRINTS, TEMPLATES MADE!!!*/
+ABSTRACT CLASSES HELP YOU FORCE THE SUBCLASSES TO FOLLOW CERTAIN RULES AND IMPLEMENT THINGS TO THE CHILD CLASSES AS PER THE RULES, BLUEPRINTS, TEMPLATES MADE!!!
+*
+* like if i am working on a project and i want my members to work upon something strictly then wthay have to do work on that and comeplete it by overriding it
+* cause abstract classes are made to do so! */
