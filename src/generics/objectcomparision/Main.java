@@ -35,7 +35,7 @@ public class Main {
             System.out.println("Both have same speed");
         }
 
-        int resultCap =capacity.compare(militaryAirlines,commercialPlane);
+        int resultCap = capacity.compare(militaryAirlines,commercialPlane);
         if (resultCap > 0) {
             System.out.println("Military airplane has more capacity");
         } else if (resultCap < 0) {
